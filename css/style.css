@@ -586,3 +586,83 @@ section{
    }
 
 }
+
+/* Pricing Section Styles */
+.pricing {
+   background-color: transparent; /* Make the background transparent */
+   padding: 5rem 2rem;
+}
+
+.pricing .heading {
+   font-size: 3rem;
+   color: var(--sub-color); /* Use your theme color */
+   text-align: center;
+   margin-bottom: 3rem;
+   text-transform: capitalize;
+}
+
+.pricing-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+   gap: 2rem;
+   justify-content: center;
+   align-items: stretch;
+}
+
+.pricing-box {
+   background-color: transparent; /* Remove white background */
+   border-radius: .5rem;
+   padding: 2rem;
+   text-align: center;
+   border: var(--border); /* Add a border for definition */
+   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pricing-box:hover {
+   transform: translateY(-10px);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.pricing-box img {
+   width: 100%; /* Make the image responsive */
+   height: 200px; /* Set a fixed height for consistency */
+   object-fit: cover; /* Ensure the image covers the area */
+   border-radius: .5rem; /* Match the box's border radius */
+   margin-bottom: 1.5rem; /* Add space below the image */
+}
+
+.pricing-box h4 {
+   font-size: 2rem;
+   color: var(--sub-color); /* Use your theme color */
+   margin-bottom: 1rem;
+   text-transform: capitalize;
+}
+
+.pricing-box .price {
+   font-size: 2.5rem;
+   color: var(--sub-color); /* Use your theme color */
+   margin-bottom: 1.5rem;
+   font-weight: bold;
+}
+
+.pricing-box p {
+   font-size: 1.6rem;
+   color: var(--sub-color); /* Use your theme color */
+   line-height: 1.6;
+   margin-bottom: 2rem;
+}
+
+.pricing-box .btn {
+   background-color: var(--sub-color); /* Use your theme color */
+   color: var(--main-color); /* Use your theme color */
+   padding: 1rem 2rem;
+   border-radius: .5rem;
+   font-size: 1.8rem;
+   transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.pricing-box .btn:hover {
+   background-color: var(--main-color);
+   color: var(--sub-color);
+   border: var(--border);
+}
